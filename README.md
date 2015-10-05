@@ -40,5 +40,10 @@ read('/my-awesome-file', function(err, content) {
 });
 ```
 
-##Author
+## Install
+```
+npm install read-file-relative
+```
+
+## Author
 [Ivan Nikulin](https://github.com/inikulin) (ifaaan@gmail.com)
