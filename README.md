@@ -1,4 +1,6 @@
 # read-file-relative
+[![Build Status](https://api.travis-ci.org/inikulin/read-file-relative.svg)](https://travis-ci.org/inikulin/read-file-relative)
+
 *Read files with path relative to the current module without annoying boilerplate code*
 
 ~~Well, I've expected @sindresorhus has a module for this, but he didn't.~~
