@@ -9,7 +9,7 @@
 
 If you have code like this:
 ```js
-var fs = require('fs');
+var fs   = require('fs');
 var path = require('path');
 
 var data = fs.readFileSync(path.join(__dirname, '/my-awesome-file')).toString();
