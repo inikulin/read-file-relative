@@ -33,9 +33,18 @@ var buffer = readSync('/my-awesome-file', true);
 
 You like it the async way (didn't you :wink:)? Do it this way:
 ```js
-var readSync = require('read-file-relative').read;
+var read = require('read-file-relative').read;
 
 read('/my-awesome-file', function(err, content) {
+   ...
+});
+```
+
+You can pass options or encoding like for regular `fs.readFile`:
+```js
+var read = require('read-file-relative').read;
+
+read('/my-awesome-file', 'utf8', function(err, content) {
    ...
 });
 ```

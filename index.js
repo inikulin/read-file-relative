@@ -18,9 +18,14 @@ module.exports = {
         return binary ? content : content.toString();
     },
 
-    read: function (relativePath, callback) {
+    read: function (relativePath, options, callback) {
         var absPath = getAbsPath(relativePath);
 
-        fs.readFile(absPath, callback);
+        if (typeof options === 'function') {
+            callback = options;
+            options  = null;
+        }
+
+        fs.readFile(absPath, options, callback);
     }
 };

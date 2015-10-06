@@ -20,3 +20,10 @@ it('Should read file async', function (done) {
         done();
     });
 });
+
+it('Should read file async with options', function (done) {
+    read('./data/file1', 'utf8', function (err, content) {
+        assert.strictEqual(content.trim(), '42');
+        done();
+    });
+});
