@@ -1,6 +1,6 @@
 {
   "name": "read-file-relative",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Read files with path relative to the current module without annoying boilerplate code ",
   "main": "index.js",
   "scripts": {
