@@ -49,6 +49,13 @@ read('/my-awesome-file', 'utf8', function(err, content) {
 });
 ```
 
+BTW, you can just convert given path to absolute:
+```js
+var toAbsPath = require('read-file-relative').toAbsPath;
+
+var absPath = toAbsPath('/my-awesome-file');
+```
+
 ## Install
 ```
 npm install read-file-relative
